@@ -1,0 +1,54 @@
+Checking problematic nodes
+
+q97.5%: Check the following nodes in chain 1
+Nodes: t_n948 | t_n1337
+Difference: -0.11527229 | 0.10421324
+
+q2.5%: Check the following nodes in chain 1
+Nodes: t_n948 | t_n1396
+Difference: -0.1194532375 | 0.10160732
+
+q2.5%: Check the following nodes in chain 2
+Nodes: t_n796 | t_n1396 | t_n1397
+Difference: -0.1043152775 | -0.11550657 | -0.12566374
+
+q2.5%: Check the following nodes in chain 3
+Nodes: t_n796
+Difference: -0.1099769275
+
+q2.5%: Check the following nodes in chain 7
+Nodes: t_n1396 | t_n1397
+Difference: 0.138008605 | 0.1297088175
+
+q2.5%: Check the following nodes in chain 9
+Nodes: t_n1375
+Difference: 0.1142666325
+
+q97.5%: Check the following nodes in chain 11
+Nodes: t_n1221 | t_n1222
+Difference: 0.1250138525 | -0.1052324225
+
+q2.5%: Check the following nodes in chain 11
+Nodes: t_n928 | t_n1017 | t_n1130
+Difference: -0.1150245775 | -0.10444121 | -0.113833085
+
+q97.5%: Check the following nodes in chain 12
+Nodes: t_n708 | t_n709 | t_n758
+Difference: -0.1244983325 | -0.1197999625 | -0.113492637499999
+
+q2.5%: Check the following nodes in chain 12
+Nodes: t_n889 | t_n896 | t_n948
+Difference: -0.10300216 | -0.1085443625 | -0.1152541225
+
+q2.5%: Check the following nodes in chain 13
+Nodes: t_n796 | t_n1016 | t_n1396
+Difference: 0.1247963825 | -0.103576965 | -0.13101438
+
+q2.5%: Check the following nodes in chain 14
+Nodes: t_n1396 | t_n1398
+Difference: -0.10198524 | -0.1404487175
+
+q2.5%: Check the following nodes in chain 15
+Nodes: t_n1239
+Difference: 0.1171856125
+

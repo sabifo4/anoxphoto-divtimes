@@ -1,0 +1,14 @@
+Checking problematic nodes
+
+q2.5%: Check the following nodes in chain 2
+Nodes: t_n1038
+Difference: 0.1008903
+
+q2.5%: Check the following nodes in chain 5
+Nodes: t_n1038 | t_n1039 | t_n1040 | t_n1041 | t_n1042 | t_n1072 | t_n1110 | t_n1187 | t_n1188 | t_n1196 | t_n1347 | t_n1348 | t_n1357
+Difference: -0.430766 | -0.348048 | -0.271243799999999 | -0.1961113 | -0.1371452 | -0.1047202 | -0.1026444 | -0.1146051 | -0.102007999999999 | -0.1011511 | -0.1066969 | -0.1234087 | -0.103220699999999
+
+q2.5%: Check the following nodes in chain 6
+Nodes: t_n1038 | t_n1039 | t_n1040 | t_n1041
+Difference: -0.316987 | -0.2617344 | -0.2108706 | -0.1488136
+

@@ -1,0 +1,380 @@
+Job starts: Mon Apr 15 16:42:04 BST 2024
+The analyses will take place in directory /data/scratch/btx126/anoxphoto/Hessian/1
+
+
+Running CODEML to calculate the Hessian and the gradient...
+
+AAML in paml version 4.10.7, June 2023
+ns = 700  	ls = 8144
+Reading sequences, sequential format..
+Reading seq # 1: B21_G17       Reading seq # 2: GCA_000005845       Reading seq # 3: GCA_000006805       Reading seq # 4: GCA_000007085       Reading seq # 5: GCA_000007185       Reading seq # 6: GCA_000007305       Reading seq # 7: GCA_000007345       Reading seq # 8: GCA_000008085       Reading seq # 9: GCA_000008265       Reading seq #10: GCA_000008665       Reading seq #11: GCA_000009365       Reading seq #12: GCA_000010785       Reading seq #13: GCA_000010985       Reading seq #14: GCA_000011105       Reading seq #15: GCA_000011125       Reading seq #16: GCA_000011185       Reading seq #17: GCA_000011245       Reading seq #18: GCA_000011805       Reading seq #19: GCA_000011905       Reading seq #20: GCA_000012285       Reading seq #21: GCA_000012345       Reading seq #22: GCA_000012545       Reading seq #23: GCA_000012685       Reading seq #24: GCA_000012965       Reading seq #25: GCA_000013405       Reading seq #26: GCA_000013445       Reading seq #27: GCA_000013725       Reading seq #28: GCA_000014045       Reading seq #29: GCA_000014265       Reading seq #30: GCA_000014725       Reading seq #31: GCA_000014825       Reading seq #32: GCA_000014865       Reading seq #33: GCA_000015145       Reading seq #34: GCA_000015225       Reading seq #35: GCA_000015645       Reading seq #36: GCA_000015765       Reading seq #37: GCA_000015805       Reading seq #38: GCA_000015945       Reading seq #39: GCA_000016525       Reading seq #40: GCA_000016605       Reading seq #41: GCA_000017165       Reading seq #42: GCA_000017185       Reading seq #43: GCA_000017565       Reading seq #44: GCA_000017605       Reading seq #45: GCA_000017645       Reading seq #46: GCA_000017945       Reading seq #47: GCA_000018305       Reading seq #48: GCA_000018465       Reading seq #49: GCA_000018565       Reading seq #50: GCA_000018865       Reading seq #51: GCA_000019605       Reading seq #52: GCA_000019965       Reading seq #53: GCA_000020145       Reading seq #54: GCA_000020365       Reading seq #55: GCA_000020465       Reading seq #56: GCA_000020625       Reading seq #57: GCA_000020645       Reading seq #58: GCA_000020905       Reading seq #59: GCA_000020945       Reading seq #60: GCA_000020985       Reading seq #61: GCA_000021645       Reading seq #62: GCA_000021685       Reading seq #63: GCA_000021885       Reading seq #64: GCA_000021905       Reading seq #65: GCA_000021965       Reading seq #66: GCA_000022145       Reading seq #67: GCA_000022205       Reading seq #68: GCA_000023205       Reading seq #69: GCA_000023325       Reading seq #70: GCA_000023905       Reading seq #71: GCA_000023985       Reading seq #72: GCA_000024125       Reading seq #73: GCA_000024465       Reading seq #74: GCA_000024805       Reading seq #75: GCA_000024905       Reading seq #76: GCA_000025205       Reading seq #77: GCA_000025265       Reading seq #78: GCA_000025285       Reading seq #79: GCA_000025325       Reading seq #80: GCA_000025485       Reading seq #81: GCA_000025505       Reading seq #82: GCA_000025625       Reading seq #83: GCA_000025665       Reading seq #84: GCA_000025685       Reading seq #85: GCA_000026045       Reading seq #86: GCA_000058485       Reading seq #87: GCA_000063445       Reading seq #88: GCA_000089865       Reading seq #89: GCA_000091565       Reading seq #90: GCA_000092125       Reading seq #91: GCA_000092185       Reading seq #92: GCA_000092205       Reading seq #93: GCA_000092305       Reading seq #94: GCA_000092645       Reading seq #95: GCA_000143145       Reading seq #96: GCA_000143165       Reading seq #97: GCA_000144645       Reading seq #98: GCA_000145275       Reading seq #99: GCA_000145295       Reading seq #100: GCA_000146065       Reading seq #101: GCA_000148385       Reading seq #102: GCA_000151105       Reading seq #103: GCA_000152805       Reading seq #104: GCA_000153105       Reading seq #105: GCA_000153765       Reading seq #106: GCA_000154225       Reading seq #107: GCA_000154485       Reading seq #108: GCA_000166095       Reading seq #109: GCA_000167195       Reading seq #110: GCA_000170735       Reading seq #111: GCA_000170835       Reading seq #112: GCA_000172635       Reading seq #113: GCA_000172995       Reading seq #114: GCA_000175255       Reading seq #115: GCA_000177375       Reading seq #116: GCA_000178975       Reading seq #117: GCA_000179635       Reading seq #118: GCA_000183405       Reading seq #119: GCA_000184705       Reading seq #120: GCA_000185385       Reading seq #121: GCA_000185805       Reading seq #122: GCA_000186345       Reading seq #123: GCA_000187225       Reading seq #124: GCA_000193375       Reading seq #125: GCA_000194625       Reading seq #126: GCA_000195275       Reading seq #127: GCA_000195295       Reading seq #128: GCA_000195915       Reading seq #129: GCA_000196135       Reading seq #130: GCA_000196655       Reading seq #131: GCA_000196895       Reading seq #132: GCA_000200715       Reading seq #133: GCA_000202835       Reading seq #134: GCA_000204155       Reading seq #135: GCA_000204415       Reading seq #136: GCA_000208385       Reading seq #137: GCA_000210915       Reading seq #138: GCA_000212375       Reading seq #139: GCA_000213215       Reading seq #140: GCA_000213785       Reading seq #141: GCA_000214175       Reading seq #142: GCA_000214415       Reading seq #143: GCA_000214725       Reading seq #144: GCA_000217715       Reading seq #145: GCA_000217995       Reading seq #146: GCA_000220175       Reading seq #147: GCA_000220355       Reading seq #148: GCA_000220525       Reading seq #149: GCA_000223395       Reading seq #150: GCA_000225345       Reading seq #151: GCA_000226975       Reading seq #152: GCA_000227705       Reading seq #153: GCA_000230715       Reading seq #154: GCA_000230735       Reading seq #155: GCA_000234805       Reading seq #156: GCA_000235685       Reading seq #157: GCA_000236665       Reading seq #158: GCA_000237865       Reading seq #159: GCA_000239275       Reading seq #160: GCA_000246735       Reading seq #161: GCA_000246985       Reading seq #162: GCA_000247995       Reading seq #163: GCA_000255115       Reading seq #164: GCA_000258405       Reading seq #165: GCA_000258425       Reading seq #166: GCA_000260115       Reading seq #167: GCA_000264495       Reading seq #168: GCA_000266925       Reading seq #169: GCA_000269985       Reading seq #170: GCA_000270285       Reading seq #171: GCA_000270325       Reading seq #172: GCA_000281175       Reading seq #173: GCA_000283575       Reading seq #174: GCA_000283595       Reading seq #175: GCA_000284115       Reading seq #176: GCA_000284315       Reading seq #177: GCA_000284335       Reading seq #178: GCA_000286435       Reading seq #179: GCA_000300255       Reading seq #180: GCA_000303155       Reading seq #181: GCA_000306725       Reading seq #182: GCA_000306765       Reading seq #183: GCA_000308215       Reading seq #184: GCA_000317285       Reading seq #185: GCA_000317575       Reading seq #186: GCA_000317615       Reading seq #187: GCA_000317795       Reading seq #188: GCA_000321415       Reading seq #189: GCA_000327485       Reading seq #190: GCA_000328525       Reading seq #191: GCA_000328665       Reading seq #192: GCA_000328685       Reading seq #193: GCA_000332315       Reading seq #194: GCA_000334895       Reading seq #195: GCA_000337035       Reading seq #196: GCA_000337235       Reading seq #197: GCA_000337455       Reading seq #198: GCA_000337915       Reading seq #199: GCA_000341545       Reading seq #200: GCA_000346485       Reading seq #201: GCA_000350305       Reading seq #202: GCA_000350525       Reading seq #203: GCA_000371785       Reading seq #204: GCA_000378105       Reading seq #205: GCA_000379665       Reading seq #206: GCA_000379725       Reading seq #207: GCA_000382425       Reading seq #208: GCA_000385565       Reading seq #209: GCA_000387965       Reading seq #210: GCA_000389735       Reading seq #211: GCA_000398025       Reading seq #212: GCA_000398765       Reading seq #213: GCA_000402095       Reading seq #214: GCA_000402355       Reading seq #215: GCA_000402515       Reading seq #216: GCA_000402775       Reading seq #217: GCA_000403075       Reading seq #218: GCA_000404225       Reading seq #219: GCA_000405245       Reading seq #220: GCA_000405685       Reading seq #221: GCA_000405905       Reading seq #222: GCA_000406005       Reading seq #223: GCA_000420365       Reading seq #224: GCA_000421285       Reading seq #225: GCA_000421585       Reading seq #226: GCA_000421665       Reading seq #227: GCA_000423005       Reading seq #228: GCA_000423085       Reading seq #229: GCA_000423105       Reading seq #230: GCA_000423185       Reading seq #231: GCA_000423865       Reading seq #232: GCA_000425345       Reading seq #233: GCA_000426505       Reading seq #234: GCA_000426625       Reading seq #235: GCA_000427095       Reading seq #236: GCA_000428885       Reading seq #237: GCA_000429065       Reading seq #238: GCA_000429925       Reading seq #239: GCA_000430605       Reading seq #240: GCA_000430805       Reading seq #241: GCA_000439105       Reading seq #242: GCA_000447225       Reading seq #243: GCA_000447245       Reading seq #244: GCA_000469585       Reading seq #245: GCA_000470655       Reading seq #246: GCA_000472805       Reading seq #247: GCA_000474745       Reading seq #248: GCA_000482705       Reading seq #249: GCA_000484535       Reading seq #250: GCA_000493965       Reading seq #251: GCA_000503915       Reading seq #252: GCA_000507245       Reading seq #253: GCA_000512235       Reading seq #254: GCA_000517025       Reading seq #255: GCA_000517625       Reading seq #256: GCA_000520955       Reading seq #257: GCA_000521175       Reading seq #258: GCA_000529525       Reading seq #259: GCA_000576635       Reading seq #260: GCA_000590925       Reading seq #261: GCA_000612055       Reading seq #262: GCA_000617865       Reading seq #263: GCA_000632985       Reading seq #264: GCA_000685155       Reading seq #265: GCA_000686525       Reading seq #266: GCA_000695095       Reading seq #267: GCA_000698785       Reading seq #268: GCA_000702505       Reading seq #269: GCA_000706685       Reading seq #270: GCA_000711905       Reading seq #271: GCA_000724625       Reading seq #272: GCA_000725425       Reading seq #273: GCA_000731315       Reading seq #274: GCA_000745965       Reading seq #275: GCA_000746255       Reading seq #276: GCA_000750955       Reading seq #277: GCA_000755225       Reading seq #278: GCA_000767275       Reading seq #279: GCA_000775285       Reading seq #280: GCA_000789255       Reading seq #281: GCA_000800805       Reading seq #282: GCA_000802205       Reading seq #283: GCA_000805965       Reading seq #284: GCA_000806055       Reading seq #285: GCA_000812025       Reading seq #286: GCA_000812185       Reading seq #287: GCA_000816145       Reading seq #288: GCA_000817245       Reading seq #289: GCA_000827125       Reading seq #290: GCA_000830275       Reading seq #291: GCA_000830315       Reading seq #292: GCA_000875975       Reading seq #293: GCA_000934745       Reading seq #294: GCA_000949295       Reading seq #295: GCA_000949475       Reading seq #296: GCA_000967915       Reading seq #297: GCA_000970025       Reading seq #298: GCA_000970205       Reading seq #299: GCA_000971665       Reading seq #300: GCA_000973085       Reading seq #301: GCA_000974445       Reading seq #302: GCA_000987835       Reading seq #303: GCA_000989525       Reading seq #304: GCA_000996275       Reading seq #305: GCA_001003475       Reading seq #306: GCA_001007995       Reading seq #307: GCA_001008165       Reading seq #308: GCA_001011115       Reading seq #309: GCA_001017655       Reading seq #310: GCA_001029755       Reading seq #311: GCA_001049915       Reading seq #312: GCA_001267175       Reading seq #313: GCA_001273775       Reading seq #314: GCA_001282625       Reading seq #315: GCA_001282785       Reading seq #316: GCA_001292705       Reading seq #317: GCA_001293525       Reading seq #318: GCA_001306115       Reading seq #319: GCA_001315925       Reading seq #320: GCA_001399775       Reading seq #321: GCA_001399795       Reading seq #322: GCA_001418295       Reading seq #323: GCA_001420285       Reading seq #324: GCA_001442855       Reading seq #325: GCA_001449115       Reading seq #326: GCA_001462395       Reading seq #327: GCA_001467045       Reading seq #328: GCA_001469955       Reading seq #329: GCA_001481685       Reading seq #330: GCA_001484605       Reading seq #331: GCA_001509375       Reading seq #332: GCA_001515185       Reading seq #333: GCA_001515205       Reading seq #334: GCA_001515305       Reading seq #335: GCA_001528745       Reading seq #336: GCA_001536145       Reading seq #337: GCA_001549215       Reading seq #338: GCA_001549225       Reading seq #339: GCA_001552015       Reading seq #340: GCA_001552275       Reading seq #341: GCA_001563875       Reading seq #342: GCA_001564035       Reading seq #343: GCA_001564145       Reading seq #344: GCA_001571385       Reading seq #345: GCA_001571405       Reading seq #346: GCA_001577525       Reading seq #347: GCA_001587575       Reading seq #348: GCA_001591405       Reading seq #349: GCA_001595815       Reading seq #350: GCA_001618605       Reading seq #351: GCA_001629205       Reading seq #352: GCA_001636295       Reading seq #353: GCA_001642025       Reading seq #354: GCA_001642725       Reading seq #355: GCA_001642915       Reading seq #356: GCA_001653075       Reading seq #357: GCA_001661595       Reading seq #358: GCA_001676585       Reading seq #359: GCA_001677435       Reading seq #360: GCA_001700325       Reading seq #361: GCA_001715195       Reading seq #362: GCA_001717005       Reading seq #363: GCA_001717015       Reading seq #364: GCA_001717025       Reading seq #365: GCA_001723855       Reading seq #366: GCA_001747085       Reading seq #367: GCA_001748385       Reading seq #368: GCA_001761425       Reading seq #369: GCA_001766815       Reading seq #370: GCA_001766825       Reading seq #371: GCA_001771235       Reading seq #372: GCA_001773575       Reading seq #373: GCA_001775965       Reading seq #374: GCA_001775995       Reading seq #375: GCA_001776545       Reading seq #376: GCA_001778375       Reading seq #377: GCA_001778395       Reading seq #378: GCA_001780165       Reading seq #379: GCA_001780825       Reading seq #380: GCA_001783525       Reading seq #381: GCA_001784555       Reading seq #382: GCA_001784635       Reading seq #383: GCA_001786415       Reading seq #384: GCA_001787635       Reading seq #385: GCA_001788415       Reading seq #386: GCA_001789205       Reading seq #387: GCA_001789395       Reading seq #388: GCA_001790445       Reading seq #389: GCA_001790855       Reading seq #390: GCA_001793975       Reading seq #391: GCA_001805325       Reading seq #392: GCA_001816645       Reading seq #393: GCA_001817055       Reading seq #394: GCA_001817235       Reading seq #395: GCA_001818495       Reading seq #396: GCA_001819215       Reading seq #397: GCA_001819985       Reading seq #398: GCA_001820295       Reading seq #399: GCA_001821935       Reading seq #400: GCA_001822375       Reading seq #401: GCA_001822905       Reading seq #402: GCA_001823825       Reading seq #403: GCA_001825035       Reading seq #404: GCA_001830115       Reading seq #405: GCA_001870225       Reading seq #406: GCA_001870675       Reading seq #407: GCA_001870735       Reading seq #408: GCA_001871415       Reading seq #409: GCA_001871445       Reading seq #410: GCA_001871475       Reading seq #411: GCA_001871495       Reading seq #412: GCA_001872685       Reading seq #413: GCA_001873945       Reading seq #414: GCA_001875355       Reading seq #415: GCA_001886955       Reading seq #416: GCA_001889405       Reading seq #417: GCA_001896515       Reading seq #418: GCA_001899365       Reading seq #419: GCA_001904655       Reading seq #420: GCA_001914405       Reading seq #421: GCA_001931675       Reading seq #422: GCA_001940645       Reading seq #423: GCA_001940655       Reading seq #424: GCA_001940665       Reading seq #425: GCA_001940705       Reading seq #426: GCA_001940725       Reading seq #427: GCA_001940755       Reading seq #428: GCA_001945525       Reading seq #429: GCA_001975705       Reading seq #430: GCA_001983935       Reading seq #431: GCA_002011075       Reading seq #432: GCA_002011125       Reading seq #433: GCA_002011355       Reading seq #434: GCA_002011615       Reading seq #435: GCA_002078355       Reading seq #436: GCA_002083825       Reading seq #437: GCA_002083985       Reading seq #438: GCA_002084955       Reading seq #439: GCA_002086485       Reading seq #440: GCA_002117005       Reading seq #441: GCA_002153915       Reading seq #442: GCA_002204705       Reading seq #443: GCA_002211205       Reading seq #444: GCA_002214165       Reading seq #445: GCA_002214545       Reading seq #446: GCA_002234495       Reading seq #447: GCA_002252985       Reading seq #448: GCA_002254495       Reading seq #449: GCA_002254545       Reading seq #450: GCA_002254565       Reading seq #451: GCA_002254805       Reading seq #452: GCA_002256485       Reading seq #453: GCA_002257665       Reading seq #454: GCA_002290085       Reading seq #455: GCA_002316275       Reading seq #456: GCA_002355835       Reading seq #457: GCA_002422165       Reading seq #458: GCA_002422525       Reading seq #459: GCA_002433075       Reading seq #460: GCA_002436025       Reading seq #461: GCA_002457155       Reading seq #462: GCA_002457555       Reading seq #463: GCA_002457595       Reading seq #464: GCA_002490245       Reading seq #465: GCA_002494525       Reading seq #466: GCA_002494605       Reading seq #467: GCA_002495465       Reading seq #468: GCA_002496015       Reading seq #469: GCA_002496345       Reading seq #470: GCA_002497285       Reading seq #471: GCA_002497405       Reading seq #472: GCA_002498125       Reading seq #473: GCA_002499655       Reading seq #474: GCA_002502135       Reading seq #475: GCA_002502415       Reading seq #476: GCA_002503205       Reading seq #477: GCA_002503705       Reading seq #478: GCA_002503985       Reading seq #479: GCA_002503995       Reading seq #480: GCA_002504435       Reading seq #481: GCA_002505585       Reading seq #482: GCA_002505945       Reading seq #483: GCA_002506485       Reading seq #484: GCA_002506995       Reading seq #485: GCA_002507085       Reading seq #486: GCA_002507385       Reading seq #487: GCA_002507425       Reading seq #488: GCA_002509165       Reading seq #489: GCA_002686295       Reading seq #490: GCA_002686355       Reading seq #491: GCA_002686855       Reading seq #492: GCA_002687275       Reading seq #493: GCA_002687735       Reading seq #494: GCA_002687795       Reading seq #495: GCA_002687825       Reading seq #496: GCA_002688035       Reading seq #497: GCA_002688315       Reading seq #498: GCA_002688415       Reading seq #499: GCA_002688875       Reading seq #500: GCA_002689985       Reading seq #501: GCA_002728275       Reading seq #502: GCA_002729015       Reading seq #503: GCA_002731115       Reading seq #504: GCA_002762795       Reading seq #505: GCA_002762835       Reading seq #506: GCA_002762975       Reading seq #507: GCA_002763075       Reading seq #508: GCA_002763085       Reading seq #509: GCA_002763115       Reading seq #510: GCA_002763155       Reading seq #511: GCA_002763225       Reading seq #512: GCA_002763275       Reading seq #513: GCA_002770575       Reading seq #514: GCA_002771845       Reading seq #515: GCA_002772495       Reading seq #516: GCA_002773845       Reading seq #517: GCA_002778455       Reading seq #518: GCA_002779425       Reading seq #519: GCA_002780175       Reading seq #520: GCA_002780285       Reading seq #521: GCA_002780625       Reading seq #522: GCA_002785105       Reading seq #523: GCA_002785505       Reading seq #524: GCA_002786835       Reading seq #525: GCA_002787055       Reading seq #526: GCA_002788215       Reading seq #527: GCA_002789635       Reading seq #528: GCA_002790905       Reading seq #529: GCA_002792115       Reading seq #530: GCA_002792715       Reading seq #531: GCA_002792915       Reading seq #532: GCA_002792955       Reading seq #533: GCA_002794035       Reading seq #534: GCA_002797495       Reading seq #535: GCA_002825515       Reading seq #536: GCA_002825535       Reading seq #537: GCA_002838935       Reading seq #538: GCA_002841105       Reading seq #539: GCA_002841675       Reading seq #540: GCA_002844375       Reading seq #541: GCA_002844595       Reading seq #542: GCA_002867475       Reading seq #543: GCA_002878135       Reading seq #544: GCA_002895525       Reading seq #545: GCA_002900535       Reading seq #546: GCA_002906575       Reading seq #547: GCA_002937505       Reading seq #548: GCA_002937525       Reading seq #549: GCA_002937625       Reading seq #550: GCA_002937855       Reading seq #551: GCA_002937915       Reading seq #552: GCA_002938155       Reading seq #553: GCA_002938255       Reading seq #554: GCA_002938315       Reading seq #555: GCA_002951835       Reading seq #556: GCA_002973575       Reading seq #557: GCA_002998355       Reading seq #558: GCA_002998925       Reading seq #559: GCA_003002095       Reading seq #560: GCA_003009815       Reading seq #561: GCA_003013295       Reading seq #562: GCA_003014555       Reading seq #563: GCA_003019445       Reading seq #564: GCA_003019535       Reading seq #565: GCA_003056265       Reading seq #566: GCA_003056285       Reading seq #567: GCA_003086455       Reading seq #568: GCA_003100395       Reading seq #569: GCA_003104905       Reading seq #570: GCA_003132625       Reading seq #571: GCA_003141075       Reading seq #572: GCA_003144275       Reading seq #573: GCA_003162415       Reading seq #574: GCA_003170935       Reading seq #575: GCA_003193925       Reading seq #576: GCA_003201765       Reading seq #577: GCA_003230355       Reading seq #578: GCA_003243975       Reading seq #579: GCA_003265975       Reading seq #580: GCA_003324635       Reading seq #581: GCA_003344655       Reading seq #582: GCA_003351065       Reading seq #583: GCA_003431325       Reading seq #584: GCA_003553825       Reading seq #585: GCA_003554235       Reading seq #586: GCA_003554845       Reading seq #587: GCA_003558235       Reading seq #588: GCA_003560545       Reading seq #589: GCA_003568775       Reading seq #590: GCA_003601605       Reading seq #591: GCA_003602595       Reading seq #592: GCA_003604315       Reading seq #593: GCA_003634715       Reading seq #594: GCA_003649185       Reading seq #595: GCA_003649375       Reading seq #596: GCA_003649605       Reading seq #597: GCA_003650785       Reading seq #598: GCA_003650865       Reading seq #599: GCA_003660725       Reading seq #600: GCA_003660865       Reading seq #601: GCA_003660905       Reading seq #602: GCA_003660965       Reading seq #603: GCA_003660975       Reading seq #604: GCA_003661285       Reading seq #605: GCA_003661365       Reading seq #606: GCA_003661385       Reading seq #607: GCA_003661685       Reading seq #608: GCA_003662455       Reading seq #609: GCA_003662715       Reading seq #610: GCA_003662885       Reading seq #611: GCA_003663045       Reading seq #612: GCA_003663125       Reading seq #613: GCA_003663225       Reading seq #614: GCA_003663325       Reading seq #615: GCA_003663345       Reading seq #616: GCA_003663355       Reading seq #617: GCA_003663445       Reading seq #618: GCA_003663475       Reading seq #619: GCA_003663645       Reading seq #620: GCA_003675855       Reading seq #621: GCA_003694495       Reading seq #622: GCA_003695435       Reading seq #623: GCA_003702465       Reading seq #624: GCA_003841485       Reading seq #625: GCA_003852135       Reading seq #626: GCA_003947435       Reading seq #627: GCA_004028775       Reading seq #628: GCA_004195655       Reading seq #629: GCA_004212075       Reading seq #630: GCA_004212085       Reading seq #631: GCA_004347835       Reading seq #632: GCA_004347915       Reading seq #633: GCA_004348015       Reading seq #634: GCA_004363215       Reading seq #635: GCA_004376705       Reading seq #636: GCA_004524425       Reading seq #637: GCA_004524435       Reading seq #638: GCA_004524545       Reading seq #639: GCA_004524565       Reading seq #640: GCA_004524595       Reading seq #641: GCA_004524725       Reading seq #642: GCA_004525545       Reading seq #643: GCA_005191415       Reading seq #644: GCA_005191425       Reading seq #645: GCA_005888705       Reading seq #646: GCA_005888735       Reading seq #647: GCA_007049995       Reading seq #648: GCA_007116645       Reading seq #649: GCA_007116655       Reading seq #650: GCA_007117065       Reading seq #651: GCA_007130955       Reading seq #652: GCA_007131205       Reading seq #653: GCA_007133845       Reading seq #654: GCA_900065925       Reading seq #655: GCA_900066015       Reading seq #656: GCA_900079095       Reading seq #657: GCA_900090055       Reading seq #658: GCA_900100385       Reading seq #659: GCA_900101835       Reading seq #660: GCA_900104655       Reading seq #661: GCA_900106765       Reading seq #662: GCA_900106775       Reading seq #663: GCA_900107645       Reading seq #664: GCA_900107665       Reading seq #665: GCA_900108505       Reading seq #666: GCA_900109575       Reading seq #667: GCA_900110485       Reading seq #668: GCA_900110555       Reading seq #669: GCA_900110675       Reading seq #670: GCA_900111285       Reading seq #671: GCA_900113675       Reading seq #672: GCA_900114055       Reading seq #673: GCA_900114435       Reading seq #674: GCA_900115565       Reading seq #675: GCA_900115805       Reading seq #676: GCA_900119185       Reading seq #677: GCA_900119385       Reading seq #678: GCA_900128475       Reading seq #679: GCA_900128965       Reading seq #680: GCA_900141795       Reading seq #681: GCA_900142005       Reading seq #682: GCA_900142025       Reading seq #683: GCA_900142245       Reading seq #684: GCA_900155405       Reading seq #685: GCA_900156605       Reading seq #686: GCA_900167015       Reading seq #687: GCA_900167555       Reading seq #688: GCA_900167975       Reading seq #689: GCA_900176285       Reading seq #690: GCA_900176595       Reading seq #691: GCA_900177735       Reading seq #692: GCA_900184705       Reading seq #693: GCA_900186535       Reading seq #694: GCA_900187885       Reading seq #695: GCA_900188145       Reading seq #696: GCA_900232105       Reading seq #697: GCA_900248165       Reading seq #698: GCA_900290095       Reading seq #699: GCA_900465355       Reading seq #700: GCA_900620265       
+Sequences read..
+
+8144 site patterns read, 8152 sites
+Counting frequencies..
+
+1957200 bytes for distance
+2606080 bytes for conP
+260608 bytes for fhK
+5000000 bytes for space
+
+TREE #  1
+
+3638087680 bytes for conP, adjusted
+
+12 node(s) used for scaling (Yang 2000 J Mol Evol 51:423-432):
+702 706 805 808 949 970 1056 1063 1166 1242 1245 1325
+
+space adjusted to  31393488 bytes
+
+ntime & nrate & np:  1397     0  1398
+
+np =  1398
+lnL0 = -5271834.205667
+
+
+Round 1a: Paras (1) (e=5)
+Iterating by ming2
+Initial: fx= 5271834.205667
+x=  0.47782
+
+1 h-m-p  0.0000 0.0106 4581.4886 C     5271812.897445  0 0.0000     6 | 0/1
+2 h-m-p  1.6000 8.0000   0.0004 Y     5271812.852975  0 1.0365    10
+
+0.487259         1:20
+
+Round 1b: Blengths (1397, e=5)
+lnL0 =    -5271812.852975
+Cycle  1: -4919990.216292
+Cycle  2: -4893293.715922
+Cycle  3: -4889395.195361
+Cycle  4: -4887893.337781
+Cycle  5: -4887128.570924
+Cycle  6: -4886847.923132
+Cycle  7: -4886715.798893
+Cycle  8: -4886637.426144
+Cycle  9: -4886592.982683
+Cycle 10: -4886557.196027
+Cycle 11: -4886525.871463
+Cycle 12: -4886510.069237
+Cycle 13: -4886505.433452
+
+11:38
+
+
+Round 2a: Paras (1) (e=2.5)
+Iterating by ming2
+Initial: fx= 4886505.433452
+x=  0.48726
+
+1 h-m-p  0.0000 0.0004 130153.2197 C     4876041.851004  0 0.0000    17 | 0/1
+2 h-m-p  1.6000 8.0000   0.1529 +Y    4867097.544881  0 4.3706    22
+
+1.120310        12:50
+
+Round 2b: Blengths (1397, e=2.5)
+lnL0 =    -4867097.544881
+Cycle  1: -4866238.862438
+Cycle  2: -4865809.901470
+Cycle  3: -4865593.140035
+Cycle  4: -4865510.468608
+Cycle  5: -4865484.345737
+Cycle  6: -4865476.580840
+Cycle  7: -4865474.176133
+
+17:50
+
+
+Round 3a: Paras (1) (e=1.25)
+Iterating by ming2
+Initial: fx= 4865474.176133
+x=  1.12031
+
+1 h-m-p  0.0000 0.0003 3551.6335 Y     4865346.522807  0 0.0000    29 | 0/1
+2 h-m-p  1.6000 8.0000   0.0034 Y     4865346.260185  0 0.8723    33
+
+1.052559        18:55
+
+Round 3b: Blengths (1397, e=1.25)
+lnL0 =    -4865346.260185
+Cycle  1: -4865345.115895
+
+19:40
+
+
+Round 4a: Paras (1) (e=0.625)
+Iterating by ming2
+Initial: fx= 4865345.115895
+x=  1.05256
+
+1 h-m-p  0.0000 0.0497  20.7902 Y     4865345.112333  0 0.0000    40 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 -C    4865345.112333  0 0.1000    45
+
+1.052214        20:47
+
+Round 4b: Blengths (1397, e=0.625)
+lnL0 =    -4865345.112333
+Cycle  1: -4865345.029274
+
+21:32
+
+
+Round 5a: Paras (1) (e=0.001)
+Iterating by ming2
+Initial: fx= 4865345.029274
+x=  1.05221
+
+1 h-m-p  0.0040 8.0000   1.7336 ---C  4865345.029250  0 0.0000    55 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 -----Y 4865345.029250  0 0.0004    64
+
+1.052242        23:21
+
+Round 5b: Blengths (1397, e=0.001)
+lnL0 =    -4865345.029250
+Cycle  1: -4865345.016448
+Cycle  2: -4865345.012329
+Cycle  3: -4865345.010828
+Cycle  4: -4865345.010274
+
+26:11
+
+
+Round 6a: Paras (1) (e=0.00025)
+Iterating by ming2
+Initial: fx= 4865345.010274
+x=  1.05224
+
+1 h-m-p  0.0040 8.0000   1.6110 ---C  4865345.010250  0 0.0000    74 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 Y     4865345.010250  0 1.6000    78
+
+1.052271        27:30
+
+Round 6b: Blengths (1397, e=0.00025)
+lnL0 =    -4865345.010250
+Cycle  1: -4865345.010042
+
+28:21
+
+
+Round 7a: Paras (1) (e=6.25e-05)
+Iterating by ming2
+Initial: fx= 4865345.010042
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.2768 ----C 4865345.010042  0 0.0000    89
+
+1.052273        29:22
+
+Round 7b: Blengths (1397, e=6.25e-05)
+lnL0 =    -4865345.010042
+Cycle  1: -4865345.009970
+Cycle  2: -4865345.009953
+
+32:56
+
+
+Round 8a: Paras (1) (e=1.5625e-05)
+Iterating by ming2
+Initial: fx= 4865345.009953
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.1861 ----C 4865345.009953  0 0.0000   100
+
+1.052274        33:57
+
+Round 8b: Blengths (1397, e=1.5625e-05)
+lnL0 =    -4865345.009953
+Cycle  1: -4865345.009948
+
+37:32
+
+
+Round 9a: Paras (1) (e=3.90625e-06)
+Iterating by ming2
+Initial: fx= 4865345.009948
+x=  1.05227
+
+1 h-m-p  0.0039 7.8439   0.1316 -----------Y 4865345.009948  0 0.0000   118 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 --Y   4865345.009948  0 0.0250   125
+
+1.052274        39:57
+
+Round 9b: Blengths (1397, e=3.90625e-06)
+lnL0 =    -4865345.009948
+Cycle  1: -4865345.009946
+
+44:07
+
+
+Round 10a: Paras (1) (e=1e-06)
+Iterating by ming2
+Initial: fx= 4865345.009946
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.1770 ----C 4865345.009946  0 0.0000   136 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 Y     4865345.009946  0 1.6000   141
+
+1.052274        45:38
+
+Round 10b: Blengths (1397, e=1e-06)
+lnL0 =    -4865345.009946
+Cycle  1: -4865345.009946
+
+50:10
+
+
+Round 11a: Paras (1) (e=1e-06)
+Iterating by ming2
+Initial: fx= 4865345.009946
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.0363 -------C 4865345.009946  0 0.0000   155 | 0/1
+2 h-m-p  1.1384 8.0000   0.0000 C     4865345.009946  0 0.2846   160
+
+1.052274        51:58
+
+Round 11b: Blengths (1397, e=1e-06)
+lnL0 =    -4865345.009946
+Cycle  1: -4865345.009946
+
+56:33
+
+6 rounds of small improvement.
+
+Round 12a: Paras (1) (e=1e-06)
+Iterating by ming2
+Initial: fx= 4865345.009946
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.0499 ---Y  4865345.009946  0 0.0000   170 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 ---C  4865345.009946  0 0.0063   178
+
+1.052275        58:16
+
+Round 12b: Blengths (1397, e=1e-06)
+lnL0 =    -4865345.009946
+Cycle  1: -4865345.009945
+
+1:02:42
+
+7 rounds of small improvement.
+
+Round 13a: Paras (1) (e=1e-06)
+Iterating by ming2
+Initial: fx= 4865345.009945
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.0953 ----Y 4865345.009945  0 0.0000   189 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 -----------Y 4865345.009945  0 0.0000   205
+
+1.052274        1:05:20
+
+Round 13b: Blengths (1397, e=1e-06)
+lnL0 =    -4865345.009945
+Cycle  1: -4865345.009945
+
+1:09:58
+
+8 rounds of small improvement.
+
+Round 14a: Paras (1) (e=1e-06)
+Iterating by ming2
+Initial: fx= 4865345.009945
+x=  1.05227
+
+1 h-m-p  0.0021 4.2125   0.2451 ------------..  | 0/1
+2 h-m-p  0.0160 8.0000   0.0005 ----------Y 4865345.009945  0 0.0000   237
+
+1.052274        1:13:06
+
+Round 14b: Blengths (1397, e=1e-06)
+lnL0 =    -4865345.009945
+Cycle  1: -4865345.009945
+
+1:17:39
+
+9 rounds of small improvement.
+
+Round 15a: Paras (1) (e=1e-06)
+Iterating by ming2
+Initial: fx= 4865345.009945
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.0635 -----Y 4865345.009945  0 0.0000   249 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 -N    4865345.009945  0 0.1000   255
+
+1.052274        1:19:22
+
+Round 15b: Blengths (1397, e=1e-06)
+lnL0 =    -4865345.009945
+Cycle  1: -4865345.009944
+
+1:23:48
+
+10 rounds of small improvement.
+
+Round 16a: Paras (1) (e=1e-06)
+Iterating by ming2
+Initial: fx= 4865345.009944
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.0499 ----Y 4865345.009944  0 0.0000   266 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 ------Y 4865345.009944  0 0.0001   277
+
+1.052274        1:25:55
+
+Round 16b: Blengths (1397, e=1e-06)
+lnL0 =    -4865345.009944
+Cycle  1: -4865345.009944
+
+1:30:29
+
+11 rounds of small improvement.
+
+Round 17a: Paras (1) (e=1e-06)
+Iterating by ming2
+Initial: fx= 4865345.009944
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.0091 ---C  4865345.009944  0 0.0000   287 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 C     4865345.009944  0 0.4000   292
+
+1.052274        1:31:54
+
+Round 17b: Blengths (1397, e=1e-06)
+lnL0 =    -4865345.009944
+Cycle  1: -4865345.009944
+
+1:36:25
+
+12 rounds of small improvement.
+
+Round 18a: Paras (1) (e=1e-06)
+Iterating by ming2
+Initial: fx= 4865345.009944
+x=  1.05227
+
+1 h-m-p  0.0040 8.0000   0.0136 ----Y 4865345.009944  0 0.0000   303 | 0/1
+2 h-m-p  1.6000 8.0000   0.0000 -Y    4865345.009944  0 0.1000   309
+
+1.052274        1:38:02
+
+Round 18b: Blengths (1397, e=1e-06)
+lnL0 =    -4865345.009944
+Cycle  1: -4865345.009944
+
+1:42:39
+
+lnL  = -4865345.009944
+Out..
+lnL  = -4865345.009944
+312 lfun, 0 eigenQcodon, 2413392 P(t)
+Calculating SE's
+
+Warning: Hessian matrix may be unreliable for zero branch lengths
+
+Time used: 6:29:23
+
+CODEML FINISHED!
+
+Job ends: Mon Apr 15 23:11:28 BST 2024
