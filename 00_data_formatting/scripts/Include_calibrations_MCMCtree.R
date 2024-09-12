@@ -57,22 +57,25 @@ out_name <- c( "anoxphoto" )
 #
 # If in doubt, please follow the same format as used in the calibrations file 
 # used for this analysis
-path_textconv_LACA <- c( "../00_raw_data/calibs/Calibs_anoxphoto_withLACA.txt" )
-calibrations_LACA  <- read.table( file = path_textconv_LACA,
-                                  stringsAsFactors = FALSE, sep = ";",
-                                  blank.lines.skip = TRUE, header = TRUE,
-                                  colClasses = rep( "character", 4 ) )
-path_textconv_noLACA <- c( "../00_raw_data/calibs/Calibs_anoxphoto.txt" )
-calibrations_noLACA  <- read.table( file = path_textconv_noLACA,
-                                    stringsAsFactors = FALSE, sep = ";",
-                                    blank.lines.skip = TRUE, header = TRUE,
-                                    colClasses = rep( "character", 4 ) )
+path_textconv_ArchExclDPANN <- c( "../00_raw_data/calibs/Calibs_anoxphoto_withArchExclDPANN.txt" )
+calibrations_ArchExclDPANN <- read.table( file = path_textconv_ArchExclDPANN,
+                                          stringsAsFactors = FALSE, sep = ";",
+                                          blank.lines.skip = TRUE,
+                                          header = TRUE,
+                                          colClasses = rep( "character", 4 ) )
+path_textconv_noArchExclDPANN <- c( "../00_raw_data/calibs/Calibs_anoxphoto.txt" )
+calibrations_noArchExclDPANN <- read.table( file = path_textconv_noArchExclDPANN,
+                                            stringsAsFactors = FALSE, sep = ";",
+                                            blank.lines.skip = TRUE,
+                                            header = TRUE,
+                                            colClasses = rep( "character", 4 ) )
 calibrations <- keep_indexes <- ind_dup <- nodes_dup <- tt_all <-
   vector( mode = "list", 2 )
-calibrations[[ 1 ]] <- calibrations_LACA
-calibrations[[ 2 ]] <- calibrations_noLACA
+calibrations[[ 1 ]] <- calibrations_ArchExclDPANN
+calibrations[[ 2 ]] <- calibrations_noArchExclDPANN
 names( calibrations ) <- names( keep_indexes )  <- names( ind_dup ) <- 
-  names( nodes_dup ) <- names( tt_all ) <- c( "withLACA", "withoutLACA" )
+  names( nodes_dup ) <- names( tt_all ) <- c( "withArchExclDPANN",
+                                              "withoutArchExclDPANN" )
 
 # Path to tree
 path_tree <- c( "../00_raw_data/trees/tree_nobl.tree" )
@@ -148,8 +151,8 @@ tt_all[[c]]$node.label[c(1,677,687)]
 # NOTE: Make always sure that there is at least one blank line at the 
 # end of the tree file! Otherwise, you will get an error telling you that 
 # there is an incomplete final line in these files.
-tt_name       <- c( "../00_raw_data/trees/cals_only_withLACA.tree",
-                    "../00_raw_data/trees/cals_only_withoutLACA.tree" )
+tt_name <- c( "../00_raw_data/trees/cals_only_withArchExclDPANN.tree",
+              "../00_raw_data/trees/cals_only_withoutArchExclDPANN.tree" )
 for( t in 1:length( tt_name ) ){
   
   #-------------------#
@@ -201,12 +204,14 @@ for( t in 1:length( tt_name ) ){
                     pattern = "\\]", replacement = "" )
       tt2 <- gsub( pattern = paste0("\\[",calibrations[[t]][j,1],"\\]"),
                    x = tt2,
-                   replacement = paste0( "'", reps, "-", calibrations[[t]][j,1], "'", 
+                   replacement = paste0( "'", reps, "-",
+                                         calibrations[[t]][j,1], "'", 
                                          collapse = "" ) )
     }else{ # For the rest of calibrations
       tt2 <- gsub( pattern = paste0("\\[",calibrations[[t]][j,1],"\\]"),
                    x = tt2,
-                   replacement = paste0( "'", reps, "-", calibrations[[t]][j,1], "'",
+                   replacement = paste0( "'", reps, "-",
+                                         calibrations[[t]][j,1], "'",
                                          collapse = "" ) )
     }
     # Generate an uncalibrated tree for CODEML!
