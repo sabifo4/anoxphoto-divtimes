@@ -10,7 +10,7 @@ Firstly, we will create the file structure required for timetree inference analy
 # Run from `anoxphoto` dir on your HPC
 # Please change directories until you are there
 # Then, run the following commands
-num_dirs=2    # num_dirs --> 1:'withLACA' 2:'withoutLaca'
+num_dirs=2    # num_dirs --> 1:'withArchExclDPANN' 2:'withoutArchExclDPANN'
 num_chains=16 # num chains we will run
 for j in `seq 1 $num_chains`
 do
@@ -233,7 +233,7 @@ We will now create a `sum_analyses` directory to analyse the `MCMCtree` output. 
 ```sh
 # Run everything from `anoxphoto` in your HPC
 num_chains=6
-num_datasets=2 # num_dir --> 1: 'with_LACA' 2: 'without_LACA'
+num_datasets=2 # num_dir --> 1: 'with_ArchExclDPANN' 2: 'without_ArchExclDPANN'
 mkdir -p tmp_to_transfer/00_prior
 cd tmp_to_transfer
 for j in `seq 1 $num_datasets`
@@ -307,9 +307,9 @@ cd ../sum_analyses/00_prior
 ## arg7 --> if arg6 is 'Y', arg7 needs to have a name for the `mcmcf4traces_<name>` that will be
 ##          generated. If `arg6` is equal to 'N', then please write `N` too
 dataset=$( echo CLK )
-name_dat=( 'withLACA' 'withoutLACA' )
-./Combine_MCMC.sh $dataset/1 mcmc_files_${name_dat[0]}_CLK "1 3 4" CLK 20000 Y withLACA_CLK
-./Combine_MCMC.sh $dataset/2 mcmc_files_${name_dat[1]}_CLK "2 5" CLK 20000 Y withoutLACA_CLK
+name_dat=( 'withArchExclDPANN' 'withoutArchExclDPANN' )
+./Combine_MCMC.sh $dataset/1 mcmc_files_${name_dat[0]}_CLK "1 3 4" CLK 20000 Y withArchExclDPANN_CLK
+./Combine_MCMC.sh $dataset/2 mcmc_files_${name_dat[1]}_CLK "2 5" CLK 20000 Y withoutArchExclDPANN_CLK
 ```
 
 The script above will generate directories called `mcmc_files*_CLK` inside the `00_prior` directory, where the `mcmc.txt` with the concatenated samples will be saved. In addition, directories with individual `mcmc.txt` files of those chains that passed the filters will be created (i.e., see `mcmcf4traces*_CLK` directories); you can read such files in programs like `Tracer` to assess the traces and run other visual MCMC diagnostics.
@@ -327,7 +327,7 @@ We have also generated dummy control file to read the dummy alignment. Additiona
 ##> path
 
 # Run from `sum_analyses/00_prior`
-name_dat=( 'withLACA' 'withoutLACA' )
+name_dat=( 'withArchExclDPANN' 'withoutArchExclDPANN' )
 num_dat=2
 count=-1
 for i in `seq 1 $num_dat`
@@ -428,7 +428,7 @@ We will now create a directory inside the `sum_analyses` directory to analyse th
 # Run from `anoxphoto`
 cd tmp_to_transfer
 num_chains=16
-num_datasets=2 # num_dir --> 1: 'with_LACA' 2: 'without_LACA'
+num_datasets=2 # num_dir --> 1: 'with_ArchExclDPANN' 2: 'without_ArchExclDPANN'
 # The `01_posterior` should already exist from the previous analyses
 # If not, it will be created during the `for` loop
 for j in `seq 1 $num_datasets`
@@ -491,10 +491,10 @@ cd ../sum_analyses/01_posterior
 ##          generated. If `arg6` is equal to 'N', then please write `N` too
 dirname_1=GBM
 dirname_2=ILN
-./Combine_MCMC.sh $dirname_1/1 mcmc_files_withLACA_GBM "4 5 6 8 10 16" GBM 20000 Y withLACA_GBM
-./Combine_MCMC.sh $dirname_2/1 mcmc_files_withLACA_ILN "2 3 4 5 6 7 8 9 10 11 12 13 14 15 16" ILN 20000 Y withLACA_ILN
-./Combine_MCMC.sh $dirname_1/2 mcmc_files_withoutLACA_GBM "`seq 1 16`" GBM 20000 Y withoutLACA_GBM
-./Combine_MCMC.sh $dirname_2/2 mcmc_files_withoutLACA_ILN "1 2 3 6 7 9 10 11 15" ILN 20000 Y withoutLACA_ILN
+./Combine_MCMC.sh $dirname_1/1 mcmc_files_withArchExclDPANN_GBM "4 5 6 8 10 16" GBM 20000 Y withArchExclDPANN_GBM
+./Combine_MCMC.sh $dirname_2/1 mcmc_files_withArchExclDPANN_ILN "2 3 4 5 6 7 8 9 10 11 12 13 14 15 16" ILN 20000 Y withArchExclDPANN_ILN
+./Combine_MCMC.sh $dirname_1/2 mcmc_files_withoutArchExclDPANN_GBM "`seq 1 16`" GBM 20000 Y withoutArchExclDPANN_GBM
+./Combine_MCMC.sh $dirname_2/2 mcmc_files_withoutArchExclDPANN_ILN "1 2 3 6 7 9 10 11 15" ILN 20000 Y withoutArchExclDPANN_ILN
 ```
 
 Once the scripts above have finished, new directories called `mcmc_files*_[GBM|ILN]` and `mcmcf4traces*_[GBM|ILN]` will be created inside `01_posterior/`, respectively. To map the mean time estimates with the filtered chains, we need to copy a control file, the calibrated Newick tree, and the dummy alignment we previously generated when analysing the results when sampling from the prior:
@@ -510,7 +510,7 @@ Once the scripts above have finished, new directories called `mcmc_files*_[GBM|I
 # Run from `sum_analyses/01_posterior` directory
 # Please change directories until you are there
 # Then run the following commands
-name_dat=( 'withLACA' 'withoutLACA' )
+name_dat=( 'withArchExclDPANN' 'withoutArchExclDPANN' )
 num_dat=2
 count=-1
 for i in `seq 1 $num_dat`

@@ -88,7 +88,7 @@ cp constrained_sp_tt/constrained_species_rooted.tre.renamed tree_detailed_taxono
 # --> `anoxphoto_annotat_FigTree.svg`
 ```
 
-Now, we can use our [annotated phylogeny](00_raw_data/trees/anoxphoto_annotate_FigTree.svg) as a guideline to build [our calibration file](00_raw_data/calibs/Calibs_anoxphoto_withLACA.txt). This file is formatted as follows:
+Now, we can use our [annotated phylogeny](00_raw_data/trees/anoxphoto_annotate_FigTree.svg) as a guideline to build [our calibration file](00_raw_data/calibs/Calibs_anoxphoto_withArchExclDPANN.txt). This file is formatted as follows:
 
 * Header with eight columns:
   * name: tag that users want to use to refer to a specific node being calibrated. Spaces should not be used!
@@ -102,7 +102,7 @@ Now, we can use our [annotated phylogeny](00_raw_data/trees/anoxphoto_annotate_F
   LUCA;GCA_000008085;GCA_000021645;'B(3.347,4.520,1e-300,1e-300)'
   ```
 
-We will generate a copy of this file in which we will remove the row for the LACA calibration (i.e., `TG-ARCH-EUKARYA` label) to test the impact of including such calibration during timetree inference (see [`Calibs_anoxphoto_withLACA.txt`](00_raw_data/calibs/Calibs_anoxphoto.txt)).
+We will generate a copy of this file in which we will remove the row for the Crown-Archaea excluding DPANN calibration (i.e., `CG-ARCH-EXCLDPANN` label) to test the impact of including such calibration during timetree inference (see the resulting file [`Calibs_anoxphoto.txt`](00_raw_data/calibs/Calibs_anoxphoto.txt)).
 
 Once both text files are ready, we can use [our in-house R script](scripts/Include_calibrations.R) to incorporate the `MCMCtree` formatted calibrations in the input tree files we will use during timetree inference analysis. Please note that time unit is 1Ga = 1000Ma. The resulting calibrated tree files will be automatically saved inside `01_inp_data` when you run [the `Include_calibrations` R script](scripts/Include_calibrations.R).
 
