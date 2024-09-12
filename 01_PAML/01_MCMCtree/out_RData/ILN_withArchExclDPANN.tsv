@@ -1,0 +1,14 @@
+ILN_withArchExclDPANN
+median	1157
+min	1138
+max	1170
+num_samples_for_ESS	17070
+tail-ESS_med	7470
+tail-ESS_min	1171
+tail-ESS_max	8637
+bulk-ESS_med	5979
+bulk-ESS_min	2645
+bulk-ESS_max	8885
+minRhat	0.999451319650723
+maxRhat	1.00503780023781
+total_samples	17355

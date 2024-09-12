@@ -1,0 +1,14 @@
+CLK_withArchExclDPANN
+median	20001
+min	20001
+max	20001
+num_samples_for_ESS	60003
+tail-ESS_med	5645
+tail-ESS_min	144
+tail-ESS_max	25337
+bulk-ESS_med	3097
+bulk-ESS_min	481
+bulk-ESS_max	24166
+minRhat	0.999957731402707
+maxRhat	1.00460951233343
+total_samples	60003

@@ -1,6 +1,6 @@
           seed = -1
        seqfile = /scratch/sandy/anoxphoto/alignments/ortho57_aln.phy
-      treefile = /scratch/sandy/anoxphoto/trees/calibrated/2/anoxphoto_withoutLACA_calib_MCMCtree.tree
+      treefile = /scratch/sandy/anoxphoto/trees/calibrated/2/anoxphoto_withoutArchExclDPANN_calib_MCMCtree.tree
       mcmcfile = mcmc.txt
        outfile = out.txt
 
