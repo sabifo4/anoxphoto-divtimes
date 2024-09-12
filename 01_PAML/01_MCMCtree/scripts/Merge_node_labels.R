@@ -32,21 +32,21 @@ source( file = "../../../src/Functions.R" )
 ##      just one!
 ## tt2: tree with node labels including PAML calibration and node name
 tt1 <- ape::read.tree( file = "../sum_analyses/00_prior/node_tree_1.tree" )
-tt2 <- ape::read.tree( file = "../../../00_data_formatting/00_raw_data/trees/anoxphoto_withLACA_fordisplay_calib_MCMCtree.tree" )
-tt3 <- ape::read.tree( file = "../../../00_data_formatting/00_raw_data/trees/anoxphoto_withoutLACA_fordisplay_calib_MCMCtree.tree" )
+tt2 <- ape::read.tree( file = "../../../00_data_formatting/00_raw_data/trees/anoxphoto_withArchExclDPANN_fordisplay_calib_MCMCtree.tree" )
+tt3 <- ape::read.tree( file = "../../../00_data_formatting/00_raw_data/trees/anoxphoto_withoutArchExclDPANN_fordisplay_calib_MCMCtree.tree" )
 # Create directory to save files with calibration info
 if( ! dir.exists( "../calib_files" ) ){
   dir.create( "../calib_files" ) 
 }
 # Save the headers first
 write( x = "Calib;node;Prior",
-       file = "../calib_files/Calibnodes_withLACA.csv" )
+       file = "../calib_files/Calibnodes_withArchExclDPANN.csv" )
 write( x = "Calib;node;Prior",
-       file = "../calib_files/Calibnodes_withLACA_margVScalib.csv" )
+       file = "../calib_files/Calibnodes_withArchExclDPANN_margVScalib.csv" )
 write( x = "Calib;node;Prior",
-       file = "../calib_files/Calibnodes_withoutLACA.csv" )
+       file = "../calib_files/Calibnodes_withoutArchExclDPANN.csv" )
 write( x = "Calib;node;Prior",
-       file = "../calib_files/Calibnodes_withoutLACA_margVScalib.csv" )
+       file = "../calib_files/Calibnodes_withoutArchExclDPANN_margVScalib.csv" )
 count_margvscalib <- 0
 ## TREE 1
 # Now, populate the output file with the info for the rest of the nodes
@@ -65,7 +65,7 @@ for( i in 1:length(tt2$node.label) ){
     if( length( is_notdist ) != 0 ){
       write( x = paste( tmp_name, ";", tt1$node.label[i], ";", tmp_dist,
                         sep = "" ), 
-             file = "../calib_files/Calibnodes_withLACA_margVScalib.csv",
+             file = "../calib_files/Calibnodes_withArchExclDPANN_margVScalib.csv",
              append = TRUE )
       count_margvscalib <- count_margvscalib + 1
     }
@@ -73,13 +73,14 @@ for( i in 1:length(tt2$node.label) ){
                 sep = "" ) )
     write( x = paste( tmp_name, ";", tt1$node.label[i], ";", tmp_dist,
                       sep = "" ), 
-           file = "../calib_files/Calibnodes_withLACA.csv", append = TRUE )
+           file = "../calib_files/Calibnodes_withArchExclDPANN.csv",
+           append = TRUE )
   }
   
 }
 # Remove second csv if not needed
 if( count_margvscalib == 0 ){
-  unlink( x = "../calib_files/Calibnodes_withLACA_margVScalib.csv" )
+  unlink( x = "../calib_files/Calibnodes_withArchExclDPANN_margVScalib.csv" )
 }
 
 ## TREE 2
@@ -100,7 +101,7 @@ for( i in 1:length(tt3$node.label) ){
     if( length( is_notdist ) != 0 ){
       write( x = paste( tmp_name, ";", tt1$node.label[i], ";", tmp_dist,
                         sep = "" ), 
-             file = "../calib_files/Calibnodes_withoutLACA_margVScalib.csv",
+             file = "../calib_files/Calibnodes_withoutArchExclDPANN_margVScalib.csv",
              append = TRUE )
       count_margvscalib <- count_margvscalib + 1
     }
@@ -108,12 +109,13 @@ for( i in 1:length(tt3$node.label) ){
                 sep = "" ) )
     write( x = paste( tmp_name, ";", tt1$node.label[i], ";", tmp_dist,
                       sep = "" ), 
-           file = "../calib_files/Calibnodes_withoutLACA.csv", append = TRUE )
+           file = "../calib_files/Calibnodes_withoutArchExclDPANN.csv",
+           append = TRUE )
   }
   
 }
 # Remove second csv if not needed
 if( count_margvscalib == 0 ){
-  unlink( x = "../calib_files/Calibnodes_withoutLACA_margVScalib.csv" )
+  unlink( x = "../calib_files/Calibnodes_withoutArchExclDPANN_margVScalib.csv" )
 }
 

@@ -132,9 +132,9 @@ perc <- 0.975
 # what the argument `main_dir` needs. The argument `f_names` requires the name 
 # of the file/s that you have used. Argument `dat` requires the same global 
 # object that you have created at the beginning of the script.
-dat    <- c( "withLACA", "withoutLACA" )
+dat    <- c( "withArchExclDPANN", "withoutArchExclDPANN" )
 dat_ff <- list.files( path = "calib_files",
-                      pattern = "LACA.csv",
+                      pattern = "ArchExclDPANN.csv",
                       full.names = FALSE )
 calib_nodes <- read_calib_f( main_dir = paste( home_dir, "calib_files/",
                                                sep = "" ),
@@ -219,8 +219,8 @@ save( file = paste( home_dir, "out_RData/sum_prior_QC.Rdata", sep = "" ),
 # already been saved in a table (one per dataset analysed) inside
 # directory `out_RData`
 
-## [[ CLK - withLACA ]] ####
-sum_prior_QC$withLACA$ESS_results
+## [[ CLK - withArchExclDPANN ]] ####
+sum_prior_QC$withArchExclDPANN$ESS_results
 # $median
 # [1] 20001
 # 
@@ -247,11 +247,11 @@ sum_prior_QC$withLACA$ESS_results
 # 
 # $total_samples
 # [1] 60003   699
-length( sum_prior_QC$withLACA$not_conv_nodes ) # 0
-sum_prior_QC$withLACA$num_chains # 3
+length( sum_prior_QC$withArchExclDPANN$not_conv_nodes ) # 0
+sum_prior_QC$withArchExclDPANN$num_chains # 3
 
-# [[ CLK - withoutLACA ]] ####
-sum_prior_QC$withoutLACA$ESS_results
+# [[ CLK - withoutArchExclDPANN ]] ####
+sum_prior_QC$withoutArchExclDPANN$ESS_results
 # $median
 # [1] 20001
 # 
@@ -278,6 +278,6 @@ sum_prior_QC$withoutLACA$ESS_results
 # 
 # $total_samples
 # [1] 40002   699
-length( sum_prior_QC$withoutLACA$not_conv_nodes ) # 0
-sum_prior_QC$withoutLACA$num_chains # 2
+length( sum_prior_QC$withoutArchExclDPANN$not_conv_nodes ) # 0
+sum_prior_QC$withoutArchExclDPANN$num_chains # 2
 

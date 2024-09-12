@@ -32,8 +32,7 @@ source( file = "../../../src/Functions.R" )
 # 1. Label the file with calibrations. If you have tested different calibrations
 # and have more than one file with the corresponding calibrations, give as 
 # many labels as files you have.
-dat <- c( "withLACA", "withoutLACA" )
-
+dat <- c( "withArchExclDPANN", "withoutArchExclDPANN" )
 
 # 2. Number of divergence times that have been estimated. One trick to find
 # this out quickly is to subtract 1 to the number of species. In this case,
@@ -52,8 +51,8 @@ num_divt <- 699
 # when sampling from the prior. 
 # You can check these numbers in script `MCMC_diagnostics_prior.R`.
 # E.g., `sum_prior_QC$<name_dataset>$total_samples`.
-# In this case, the number of lines is 60003 for "withLACA" and 40002 for
-# "withoutLACA", and so you need to specify one less for each of these
+# In this case, the number of lines is 60003 for "withArchExclDPANN" and 40002 for
+# "withoutArchExclDPANN", and so you need to specify one less for each of these
 # numbers
 #
 # NOTE: If you had more than one dataset, you would add another number to

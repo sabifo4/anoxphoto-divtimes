@@ -32,7 +32,7 @@ source( file = "../../../src/Functions.R" )
 # 1. Label the file with calibrations. If you have tested different calibrations
 # and have more than one file with the corresponding calibrations, give as 
 # many labels as files you have.
-dat <- c( "withLACA", "withoutLACA" )
+dat <- c( "withArchExclDPANN", "withoutArchExclDPANN" )
 
 # 2. Number of divergence times that have been estimated. One trick to find
 # this out quickly is to subtract 1 to the number of species. In this case,
@@ -51,7 +51,7 @@ num_divt <- 699
 # You can check these numbers in scripts `MCMC_diagnostics_posterior.R` and
 # `MCMC_diagnostics_prior.R`. E.g., `sum_post_QC$<name_dataset>$total_samples`
 # or `sum_prior_QC$<name_dataset>$total_samples`
-# CLK: The number of lines is 60003 for "withLACA" and 40002 for "withoutLACA"; 
+# CLK: The number of lines is 60003 for "withArchExclDPANN" and 40002 for "withoutArchExclDPANN"; 
 #      you need to specify one less
 # GBM: The number of lines are 5654 and 18348; so you need to specify one less
 # ILN: The number of lines is 17355 and 10462; so you need to specify one less
@@ -59,8 +59,8 @@ num_divt <- 699
 # NOTE: If you had more than one dataset, you would add another vector of three
 # values with the samples for CLK, GBM, and ILN to create `def_samples`
 # E.g. two datasts: c( c( 120005, 120005, 120005), c( 120005, 120005, 120005) )
-def_samples <- c( c( 60002, 5653, 18347 ),  # withLACA
-                  c( 40001, 17354, 10461 )  # without LACA
+def_samples <- c( c( 60002, 5653, 17354 ),  # withArchExclDPANN
+                  c( 40001, 18347, 10461 )  # without ArchExclDPANN
 ) 
 
 # 4. Quantile percentage that you want to set By default, the variable below is 

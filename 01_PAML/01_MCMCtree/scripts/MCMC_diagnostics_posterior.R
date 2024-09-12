@@ -39,8 +39,8 @@ num_chains <- 16
 
 # 2. Number of divergence times that have been estimated. One trick to find
 # this out quickly is to subtract 1 to the number of species. In this case,
-# there are quickly taxa (quickly), so the number of internal nodes
-# is `n_taxa=quickly-1=699`.
+# there are 701 taxa (701), so the number of internal nodes
+# is `n_taxa=701-1=699`.
 # Another way to verify this is by opening the `mcmc.txt` file and check the
 # header. The first element after `Gen` will have the format of `t_nX`, where
 # X will be an integer (i.e., 701). Subtract two to this number 
@@ -132,9 +132,9 @@ perc <- 0.975
 # what the argument `main_dir` needs. The argument `f_names` requires the name 
 # of the file/s that you have used. Argument `dat` requires the same global 
 # object that you have created at the beginning of the script.
-dat    <- c( "withLACA", "withoutLACA" )
+dat    <- c( "withArchExclDPANN", "withoutArchExclDPANN" )
 dat_ff <- list.files( path = "calib_files",
-                      pattern = "LACA.csv",
+                      pattern = "ArchExclDPANN.csv",
                       full.names = FALSE )
 calib_nodes <- read_calib_f( main_dir = paste( home_dir, "calib_files/",
                                                sep = "" ),
@@ -184,10 +184,10 @@ dataset       <- sort( c( paste( dat, "_GBM", sep = "" ),
                           paste( dat, "_ILN", sep = "" ) ) )
 node_calib          <- vector( mode = "list", length = length( dataset ) )
 names( node_calib ) <- dataset
-node_calib[[ 1 ]]   <- calib_nodes[[ 1 ]] #withLACA_GBM
-node_calib[[ 2 ]]   <- calib_nodes[[ 1 ]] #withLACA_ILN
-node_calib[[ 3 ]]   <- calib_nodes[[ 2 ]] #withoutLACA_GBM
-node_calib[[ 4 ]]   <- calib_nodes[[ 2 ]] #withoutLACA_ILN
+node_calib[[ 1 ]]   <- calib_nodes[[ 1 ]] #withArchExclDPANN_GBM
+node_calib[[ 2 ]]   <- calib_nodes[[ 1 ]] #withArchExclDPANN_ILN
+node_calib[[ 3 ]]   <- calib_nodes[[ 2 ]] #withoutArchExclDPANN_GBM
+node_calib[[ 4 ]]   <- calib_nodes[[ 2 ]] #withoutArchExclDPANN_ILN
 perc          <- perc
 def_samples   <- def_samples
 prior         <- FALSE
@@ -230,8 +230,8 @@ save( file = paste( home_dir, "out_RData/sum_post_QC.RData", sep = "" ),
 
 # Print out sum stats in the script as a log
 
-## [[ GBM -- with LACA ]] ####
-sum_post_QC$withLACA_GBM$ESS_results
+## [[ GBM -- with ArchExclDPANN ]] ####
+sum_post_QC$withArchExclDPANN_GBM$ESS_results
 # $median
 # [1] 557.5
 # 
@@ -258,11 +258,11 @@ sum_post_QC$withLACA_GBM$ESS_results
 # 
 # $total_samples
 # [1] 5654  699
-length( sum_post_QC$withLACA_GBM$not_conv_nodes ) # 0
-sum_post_QC$withLACA_GBM$num_chains # 6
+length( sum_post_QC$withArchExclDPANN_GBM$not_conv_nodes ) # 0
+sum_post_QC$withArchExclDPANN_GBM$num_chains # 6
 
-## [[ ILN -- with LACA ]] ####
-sum_post_QC$withLACA_ILN$ESS_results
+## [[ ILN -- with ArchExclDPANN ]] ####
+sum_post_QC$withArchExclDPANN_ILN$ESS_results
 # $median
 # [1] 1157
 # 
@@ -289,12 +289,12 @@ sum_post_QC$withLACA_ILN$ESS_results
 # 
 # $total_samples
 # [1] 17355   699
-length( sum_post_QC$withLACA_ILN$not_conv_nodes ) # 0
-sum_post_QC$withLACA_ILN$num_chains # 15
+length( sum_post_QC$withArchExclDPANN_ILN$not_conv_nodes ) # 0
+sum_post_QC$withArchExclDPANN_ILN$num_chains # 15
 
 
-## [[ GBM -- without LACA ]] ####
-sum_post_QC$withoutLACA_GBM$ESS_results
+## [[ GBM -- without ArchExclDPANN ]] ####
+sum_post_QC$withoutArchExclDPANN_GBM$ESS_results
 # $median
 # [1] 1147
 # 
@@ -321,11 +321,11 @@ sum_post_QC$withoutLACA_GBM$ESS_results
 # 
 # $total_samples
 # [1] 18348   699
-length( sum_post_QC$withoutLACA_GBM$not_conv_nodes ) # 0
-sum_post_QC$withoutLACA_GBM$num_chains # 16
+length( sum_post_QC$withoutArchExclDPANN_GBM$not_conv_nodes ) # 0
+sum_post_QC$withoutArchExclDPANN_GBM$num_chains # 16
 
-## [[ ILN -- without LACA ]] ####
-sum_post_QC$withoutLACA_ILN$ESS_results
+## [[ ILN -- without ArchExclDPANN ]] ####
+sum_post_QC$withoutArchExclDPANN_ILN$ESS_results
 # $median
 # [1] 1161
 # 
@@ -352,7 +352,7 @@ sum_post_QC$withoutLACA_ILN$ESS_results
 # 
 # $total_samples
 # [1] 10462   699
-length( sum_post_QC$withoutLACA_ILN$not_conv_nodes ) # 0
-sum_post_QC$withoutLACA_ILN$num_chains # 9
+length( sum_post_QC$withoutArchExclDPANN_ILN$not_conv_nodes ) # 0
+sum_post_QC$withoutArchExclDPANN_ILN$num_chains # 9
 
 
