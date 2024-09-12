@@ -106,4 +106,4 @@ We will generate a copy of this file in which we will remove the row for the Cro
 
 Once both text files are ready, we can use [our in-house R script](scripts/Include_calibrations.R) to incorporate the `MCMCtree` formatted calibrations in the input tree files we will use during timetree inference analysis. Please note that time unit is 1Ga = 1000Ma. The resulting calibrated tree files will be automatically saved inside `01_inp_data` when you run [the `Include_calibrations` R script](scripts/Include_calibrations.R).
 
-Now, we have the input alignment and tree files, so we can [get started with PAML software: let's run `CODEML` for branch lengths, gradient, and Hessian inference!](../01_PAML/00_Hessian/README.md)!
+Now, we have the input alignment and tree files, so we can [get started with PAML software: let's run `CODEML` for branch lengths, gradient, and Hessian inference!](../01_PAML/00_CODEML/README.md)!

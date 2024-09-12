@@ -241,7 +241,7 @@ grep 'model' */*/tmp0001.ctl   # You should see `model = 3` (i.e., empirical+F m
 
 We can now run `CODEML` given that we have the control file ready as well as all the required input files!
 
-We have created a template bash script with flags (i.e., see script `pipeline_Hessian_CODEML_template.sh` in the [`scripts` directory](01_PAML/00_Hessian/scripts/pipeline_Hessian_CODEML_template.sh)), which will be replaced with the appropriate values by another bash script (`generate_job_CODEML.sh`, also saved in the [`scripts` directory](01_PAML/00_Hessian/scripts/generate_job_CODEML.sh)). Please note that the second bash script will edit the template bash script according to the data alignment/s that will be analysed. We had already transferred these scripts to the HPC when setting up our file structure. Therefore, we just need to execute the following code snippet there:
+We have created a template bash script with flags (i.e., see script `pipeline_Hessian_CODEML_template.sh` in the [`scripts` directory](01_PAML/00_CODEML/scripts/pipeline_Hessian_CODEML_template.sh)), which will be replaced with the appropriate values by another bash script (`generate_job_CODEML.sh`, also saved in the [`scripts` directory](01_PAML/00_CODEML/scripts/generate_job_CODEML.sh)). Please note that the second bash script will edit the template bash script according to the data alignment/s that will be analysed. We had already transferred these scripts to the HPC when setting up our file structure. Therefore, we just need to execute the following code snippet there:
 
 ```sh
 # Run from `anoxphoto` dir on your HPC
