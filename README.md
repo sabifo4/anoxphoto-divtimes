@@ -1,6 +1,9 @@
-# Quasi-Darwinian competition between biogeochemical cycle-variants by persistence selection for their geochemical effects -- timetree inference analyses
+# Reproducible Bayesian node-dating timetree inference
 
-In this repository, you will find a very detailed tutorial with all the steps you need to follow to reproduce the results for the timetree inference analyses we carried out as part of our study: **Quasi-Darwinian competition between biogeochemical cycle-variants by persistence selection for their geochemical effects**.
+In this repository, you will find a very detailed tutorial with all the steps you need to follow to reproduce the results for the timetree inference analyses we carried out as part of the following studies:
+
+* **Quasi-Darwinian competition between biogeochemical cycle-variants by persistence selection for their geochemical effects**.
+* **Evolutionary assembly of metabolism through Earth history**.
 
 To get started, you can clone this repository on your PC and follow all the guidelines given in the various `README.md` files that you shall find inside each directory so that you can go through all the steps we carried out for timetree inference. A summary of this workflow is given below:
 
